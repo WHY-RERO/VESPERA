@@ -1,0 +1,15 @@
+# VESPERA - Anlık Konum Takip Sistemi
+# Gerekli Python Paketleri
+
+
+Flask>=3.0.0
+
+os
+
+requests>=2.32.0
+
+
+colorama>=0.4.6
+
+Pillow>=10.2.0
+
