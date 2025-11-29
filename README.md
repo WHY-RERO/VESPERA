@@ -31,10 +31,16 @@ brew install python git
 pkg update -y
 pkg install python git pip -y
 termux-setup-storage
+pkg install git -y
+pkg install python -y
+git clone https://github.com/WHY-RERO/VESPERA
+cd VESPERA
+pip install -r requirements.txt
+python app.py
 
 ## Installation
 git clone https://github.com/WHY-RERO/VESPERA
-cd rero-project
+cd VESPERA
 pip install -r requirements.txt
 python app.py
 
