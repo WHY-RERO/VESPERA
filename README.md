@@ -33,7 +33,7 @@ pkg install python git pip -y
 termux-setup-storage
 
 ## Installation
-git clone https://github.com/yourusername/rero-project.git
+git clone https://github.com/WHY-RERO/VESPERA
 cd rero-project
 pip install -r requirements.txt
 python app.py
