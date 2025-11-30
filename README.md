@@ -86,6 +86,15 @@ Crypto Donation Address:
 Bitcoin: bc1qjaez9qsadhxecup7lctwtvreqxklvv9c8e5ux9
 
 
+## Connect with Me / Sosyal Medya
+
+💬 **Telegram:** [@why_reronuzzz](https://t.me/why_reronuzzz)  
+📸 **Instagram:** [@why_reronuzzz](https://instagram.com/why_reronuzzz)   
+▶️ **YouTube:** [@why_reronuzzz](https://www.youtube.com/@why_reronuzzz) 
+
+---
+
+
 <p align="center">
   <img src="banner/vespera.jpg" width="%100">
 </p>
