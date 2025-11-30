@@ -94,6 +94,10 @@ Bitcoin: bc1qjaez9qsadhxecup7lctwtvreqxklvv9c8e5ux9
 
 ---
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+
 
 <p align="center">
   <img src="banner/vespera.jpg" width="%100">
