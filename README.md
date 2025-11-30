@@ -86,4 +86,6 @@ Crypto Donation Address:
 Bitcoin: bc1qjaez9qsadhxecup7lctwtvreqxklvv9c8e5ux9
 
 
-![VESPERA](banner/vespera.png)
+<p align="center">
+  <img src="images/vespera.png" width="220">
+</p>
