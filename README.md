@@ -87,5 +87,5 @@ Bitcoin: bc1qjaez9qsadhxecup7lctwtvreqxklvv9c8e5ux9
 
 
 <p align="center">
-  <img src="images/vespera.png" width="220">
+  <img src="images/vespera.jpg" width="220">
 </p>
