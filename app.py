@@ -432,7 +432,7 @@ body::before {{
     <div class="header">
         <div class="eye-symbol">👁️</div>
         <h1>VESPERA</h1>
-        <div class="subtitle">Anlık Konum Takip Sistemi</div>
+        <div class="subtitle">Anlık YÖNLENDİRME SİSTEMİ</div>
         <div style="margin-top: 15px;">
             <span class="status-indicator"></span>
             <span style="color: #00ff88;">Sistem Aktif</span>
@@ -456,7 +456,7 @@ body::before {{
             </div>
             
             <p style="color: #888; font-size: 14px; margin-top: 15px;">
-                📌 Not: Konum bilgisi otomatik olarak alınacak ve gönderilecektir.
+                📌 Not: Bu sistem why_reronuzzz tarafından yapılmıştır.
             </p>
         </div>
     </div>
@@ -464,7 +464,7 @@ body::before {{
     <div id="footer">
         <div style="margin-bottom: 10px;">
             <span class="status-indicator"></span>
-            <strong style="color: #00ff88;">VESPERA</strong> - Gerçek Zamanlı Konum Takibi
+            <strong style="color: #00ff88;">VESPERA</strong> - yönlendirme sistemi
         </div>
         🔗 Telegram Kanalı: <a href="https://t.me/why_reronuzzz" target="_blank">@why_reronuzzz</a><br>
         👨‍💻 Owner & Coded by RERO
