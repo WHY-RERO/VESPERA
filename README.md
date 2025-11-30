@@ -21,13 +21,16 @@ A powerful, modern, cross-platform Python automation & cybersecurity utility.
 - pip
 
 ### Linux (Ubuntu / Debian / Kali)
+```bash
 sudo apt update
 sudo apt install python3 python3-pip git -y
-
+```
 ### macOS
+```bash
 brew install python git
-
-### Termux
+```
+### Termux  
+```bash
 pkg update -y
 pkg install python git pip -y
 termux-setup-storage
@@ -37,25 +40,33 @@ git clone https://github.com/WHY-RERO/VESPERA
 cd VESPERA
 pip install -r requirements.txt
 python app.py
+```
+
 
 ## Installation
+```bash
 git clone https://github.com/WHY-RERO/VESPERA
 cd VESPERA
 pip install -r requirements.txt
 python app.py
+```
 
 ## Usage Examples
+```bash
 python app.py
 python app.py --scan target.com
 python app.py --output report.txt
+```
 
 ## Project Structure
+```bash
 rero-project/
 ├── app.py
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 
 ## Troubleshooting
 pip: command not found -> sudo apt install python3-pip
