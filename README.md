@@ -7,7 +7,7 @@ A powerful, modern, cross-platform Python automation & cybersecurity utility.
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
 
-![VESPERA](banner/vespera.png)
+
 
 
 ## Features
@@ -84,3 +84,6 @@ Pull requests are welcome.
 ## Support the Project
 Crypto Donation Address:
 Bitcoin: bc1qjaez9qsadhxecup7lctwtvreqxklvv9c8e5ux9
+
+
+![VESPERA](banner/vespera.png)
