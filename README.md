@@ -1,4 +1,4 @@
-# Rero Project
+# VESPERA
 A powerful, modern, cross-platform Python automation & cybersecurity utility.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge)
